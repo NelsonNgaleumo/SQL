@@ -17,3 +17,13 @@ Display the database ordered by prices
 
 SELECT * FROM bplusb 
 ORDER BY PRICEPERUNIT;
+
+Display the average price per unit of item solds on bplusb
+SELECT AVG (PRICEPERUNIT)"avg bulk item price"
+FROM bplusb;
+
+Display the top 4 products with minimum quantities sold from bplusb
+
+SELECT NAME, QUANTITY FROM bplusb ORDER BY QUANTITY LIMIT 4;
+
+
